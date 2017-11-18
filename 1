@@ -1,0 +1,22 @@
+//Baekjoon oline 11718
+
+#include <stdio.h>
+
+int main() {
+    char input[100][100];
+
+    int i;
+
+    for (i=0; i<100; i++) {
+        gets(input[i]);
+    }
+
+    for (i=0; i<100; i++) {
+        puts(input[i]);
+    }
+    printf(input[100]);
+}
+
+//C언어에는 True, False가 없다. 1, 0으로 쓰면 된다.
+//gets는 엔터를 치기 전까지 입력받는다.
+//puts는 엔터를 함께 출력한다.
