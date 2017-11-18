@@ -1,0 +1,19 @@
+//Baekjoon oline 11718
+
+#include <stdio.h>
+
+int main() {
+	char input[100][100] = { 0, };
+    int i;
+    int n;
+
+    for (i=0; i<5; i++) {
+        gets(input[i]);
+        if (input[i][0] == 0)  {n = i-1; break;}
+    }
+
+    for (i=0; i<n; i++) {
+		printf("%s\n", input[i]);
+    }
+    printf("%s", input[n]);
+ }
